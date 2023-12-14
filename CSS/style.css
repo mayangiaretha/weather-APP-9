@@ -3,10 +3,16 @@
     border-radius: 10px;
     margin: 0 auto;
     width: 600px;
-    height: 400px;
+    height: 500px;
     background-color: white;
-
-    
+padding: 0 4rem;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 body{
@@ -14,11 +20,11 @@ display: flex;
 align-items: center;
 justify-content: center;
 min-height: 100vh;
-background-image: url(../assets/sunny.jpg);
+/* background-image: url(../assets/sunny.jpg);
 background-repeat: no-repeat;
 background-position: center center;
-background-size: cover;
-
+background-size: cover; */
+background: linear-gradient(115deg, rgba(36, 36, 36, 0.603), rgba(21, 21, 22, 0.464)), url("../assets/ezgif.com-video-to-gif-converted.gif") no-repeat center center/cover;
 }
 .weather{
     display: flex;
@@ -27,7 +33,7 @@ background-size: cover;
     gap:10px;
 }
 h1{
-    color: red;
+    color: white;
     text-align: center;
     padding: 40px 0;
 }
@@ -35,8 +41,9 @@ input{
     border-radius: 5px;
     padding: 10px;
     color: black;
-  
-
+  outline: none;
+  border: none;
+flex: 1;
 
 }
 button{
@@ -54,5 +61,32 @@ button:hover{
 
 #weatherData{
     text-align: center;
-
+margin: 1rem auto;
 }
+.inner-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px auto;
+}
+.not-found{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.not-found img{
+    width: 30%;
+    display: none;
+}
+
+
+/* .not-found,
+#weatherData {
+    display: none;
+}
+
+.not-found.active,
+#weatherData.active {
+    display: flex;
+} */
