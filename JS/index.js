@@ -106,8 +106,8 @@ document.addEventListener('DOMContentLoaded', async function () {
     document.querySelector('.temp').innerHTML = Math.round(data.main.temp) + "℃";
     // document.querySelector('.humidity').innerHTML = data.main.humidity + "%";
     // document.querySelector('.wind').innerHTML = data.wind.speed + " km/h";
-    document.querySelector('.humidity').innerHTML = `Humidity: ${data.main.humidity}%`;
-    document.querySelector('.wind').innerHTML = `Wind: ${data.wind.speed} km/h`;
+    document.querySelector('.humidity').innerHTML = `<i class="fa-solid fa-water"></i> Humidity: ${data.main.humidity}%`;
+    document.querySelector('.wind').innerHTML = `<i class="fa-solid fa-wind"></i> Wind: ${data.wind.speed} km/h`;
   }
 
 });
