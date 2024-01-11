@@ -3,7 +3,7 @@
     border-radius: 10px;
     margin: 0 auto;
     width: 600px;
-    height: 500px;
+    height: 600px;
     background-color: white;
 padding: 0 4rem;
     /* From https://css.glass */
@@ -77,22 +77,20 @@ margin: 1rem auto;
     width: 100%;
     text-align: center;
 }
-.not-found img{
-    width: 30%;
-    display: none;
-}
+  .not-found img {
+      width: 40%;
+      height: 200px;
+  }
 
 i{
     font-size: 2.5rem;
 margin-right: 10px;
 vertical-align: middle;
 }
-/* .not-found,
-#weatherData {
-    display: none;
-}
-
-.not-found.active,
-#weatherData.active {
-    display: flex;
-} */
+        @media (max-width:528px) {
+            .inner-grid {
+                display: flex;
+                flex-direction: column;
+              
+            }
+        }
